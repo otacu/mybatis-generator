@@ -11,9 +11,14 @@
         </commentGenerator>
         <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
 
+        <!--<jdbcConnection driverClass="com.mysql.jdbc.Driver"-->
+                        <!--connectionURL="jdbc:mysql://172.16.50.242:13306/msyt-cart" userId="root"-->
+                        <!--password="csbt34.ydhl12s">-->
+        <!--</jdbcConnection>-->
+
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://172.16.50.242:13306/msyt-cart" userId="root"
-                        password="csbt34.ydhl12s">
+                        connectionURL="jdbc:mysql://localhost:3306/onion?serverTimezone=UTC" userId="root"
+                        password="123456">
         </jdbcConnection>
 
         <javaModelGenerator targetPackage="com.egoist.acg.pojo" targetProject=".\src/main/java">
@@ -38,7 +43,12 @@
         <!-- 指定数据库表 -->
 
         <!-- 进货单表 -->
-        <table tableName="tb_cart" domainObjectName="Cart"></table>
+        <!--<table tableName="tb_cart" domainObjectName="Cart"></table>-->
+
+        <!-- 拆单表 -->
+        <table tableName="tb_order_sub" domainObjectName="OrderSub"></table>
+        <!-- 订单商品表 -->
+        <table tableName="tb_order_item" domainObjectName="OrderItem"></table>
 
     </context>
 </generatorConfiguration>
