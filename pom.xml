@@ -39,7 +39,7 @@
 				<artifactId>mybatis-generator-maven-plugin</artifactId>
 				<version>1.3.5</version>
 				<configuration>
-					<configurationFile>${basedir}/src/main/resources/config-generator-acg.xml</configurationFile>
+					<configurationFile>${basedir}/src/main/resources/config-generator-miniprogram.xml</configurationFile>
 					<verbose>true</verbose>
 					<overwrite>true</overwrite>
 				</configuration>
