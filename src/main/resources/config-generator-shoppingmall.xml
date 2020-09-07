@@ -11,6 +11,8 @@
 
         <!-- 生成注释的插件 -->
         <plugin type="com.egoist.mybatis.generator.plugin.EgoistCommentPlugin"></plugin>
+        <!-- 生成service的插件 -->
+        <plugin type="com.egoist.mybatis.generator.plugin.EgoistServicePlugin"></plugin>
 
         <commentGenerator>
             <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
